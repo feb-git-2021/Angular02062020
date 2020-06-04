@@ -1,0 +1,56 @@
+<h2>product works!</h2>
+
+<!-- 
+Product ID : {{ getProduct().productId }} <br>
+
+Product Name : {{getProduct().productName}} <br>
+
+Product Cost : {{ getProduct().productCost}} -->
+
+
+<!-- *ngFor='let item of items'
+
+item.proper tyName -->
+
+
+<!-- <ul>
+    <li *ngFor='let p of products'>
+        {{p.productId}}
+        {{p.productName}}
+        {{p.productCost}}
+    </li>
+   
+    
+</ul> -->
+
+
+
+Product Cost :<input type="text" [(ngModel)]=productCost>
+
+
+{{productCost}}
+
+
+
+<br>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Product Id</th>
+            <th>Product Name</th>
+            <th>Product Cost</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let product of products'>
+            <td>{{product.productId}}</td>
+            <td>{{product.productName}}</td>
+            <td>{{product.productCost}}</td>
+        </tr>
+    </tbody>
+
+</table>
+
+<p *ngIf=false> This is angular training</p>   
